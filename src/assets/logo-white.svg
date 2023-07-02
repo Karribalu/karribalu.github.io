@@ -1,0 +1,23 @@
+<svg width="218" height="89" viewBox="0 0 218 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Logo white">
+<g id="Group">
+<path id="Vector" d="M67.7825 44.908L85.043 65.1049H71.9824L56.9933 47.9646H51.2577V65.1049H39.4471V25.5046H51.2577V42.1361H56.9933L71.586 25.5046H85.043L67.7825 44.908Z" fill="white"/>
+<path id="Vector_2" d="M132.003 65.1049H88.4501V25.5046H128.539V40.6096H132.003V65.1049ZM100.318 31.3296V40.6096H120.135V31.3296H100.318ZM100.318 46.4345V59.2764H120.135V46.4345H100.318Z" fill="white"/>
+<path id="Vector_3" d="M181.856 59.109L176.688 65.1047H140.86L135.75 59.2762H167.717L169.817 56.8423V48.185H137.282V31.7777L142.675 25.4973H183.217L178.221 31.3258H151.703L149.149 34.2116V42.3601H181.856V59.1054V59.109Z" fill="white"/>
+</g>
+<path id="Vector_4" d="M199.052 66.0835L195.301 61.8027L210.662 44.255L195.301 26.7073L199.052 22.4265L218 44.2586L199.052 66.0906V66.0835Z" fill="white"/>
+<path id="Vector_5" d="M19.0965 66.3113L0 44.2589L19.0965 22.2029L22.9237 26.53L7.37077 44.2589L22.9237 61.9878L19.0965 66.3148V66.3113Z" fill="white"/>
+<path id="Vector_6" d="M89.2557 88.4827L84.7278 86.2577L137.281 0.482666L141.812 2.70768L89.2557 88.4827Z" fill="white"/>
+<g id="Vector 2" filter="url(#filter0_f_292_43)">
+<path d="M118.519 40H112.753L108.246 47.5058H114.221L118.519 40Z" fill="#4D4D4D"/>
+</g>
+<path id="Vector_7" d="M122.709 40.564H99.7855V46.6098H122.709V40.564Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_f_292_43" x="103.186" y="34.94" width="20.3928" height="17.6259" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2.53" result="effect1_foregroundBlur_292_43"/>
+</filter>
+</defs>
+</svg>

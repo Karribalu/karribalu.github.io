@@ -1,0 +1,36 @@
+.navbar-light{
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+.navbar-dark {
+    color:#820A5B;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+}
+.nav-links{
+    display: flex;
+    gap: 7rem;
+    font-size: 28px;
+    font-weight: 700;
+   
+    align-items: center;
+}
+
+.toggle{
+    width: 80px;
+    height: 39.507px;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.nav-line{
+    width: 1649px;
+    height: 1px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(248, 244, 244, 0.00) 0%, rgba(232, 230, 230, 0.48) 51.56%, rgba(217, 217, 217, 0.00) 100%);
+}
