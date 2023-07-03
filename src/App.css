@@ -1,6 +1,52 @@
 .dark-bg{
     background-image: url('./assets/dark-bg.png');
+    flex-shrink: 0;
+    background-size:cover ;
+    aspect-ratio: 1/1;
+    
 }
 .light-bg{
     background-image: url('./assets/light-bg.png');
+    flex-shrink: 0;
+    background-size: cover;
+    aspect-ratio: 1/1;
 }
+.blur{
+    position: relative;
+}
+.blur::before{
+    content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media(max-width:768px){
+    .light-bg
+    {
+        flex-shrink: 0;
+        background-size: cover;
+    }
+    .dark-bg{
+        flex-shrink: 0;
+        background-size: cover;
+    }
+    
+}
+@media(max-width:768px) {
+    .light-bg {
+        flex-shrink: 0;
+        background-size: cover;
+    }
+
+    .dark-bg {
+        flex-shrink: 0;
+        background-size: cover;
+    }
+
+}
+
+

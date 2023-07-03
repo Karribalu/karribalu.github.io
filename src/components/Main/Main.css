@@ -65,19 +65,24 @@
     width: 200px;
     gap: 2rem;
 }
-.social-links-dark > .social-link{
+
+.social-links-dark .social-link{
     cursor: pointer;
 }
-.social-links-dark>.social-link:hover{
+.social-links-dark .social-link:hover{
     background-color: #820A5B;
     border-radius: 60%;
-    color:white;
+    height: 52px;
 }
 
-.social-links-light > .social-link{
-    
+.social-links-light .social-link{
     background-color: #820A5B;
-    border-radius: 60%;
+    border-radius: 50%;
     cursor: pointer;
+}
+
+.social-links-light .social-link:hover {
+    border-radius: 60%;
+    height: 52px;
 }
 
