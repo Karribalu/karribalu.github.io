@@ -16,7 +16,7 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
         <img src = {logo} alt="logo" className="logo"/>
         :
         <img src = {logoColor} alt="logo" className="logo"/>
-}
+        }
         <div className="nav-links">
             <Link to="skills" className="nav-link">Skills</Link>
             <Link to="experience" className="nav-link">Experience</Link>

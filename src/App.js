@@ -3,14 +3,14 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Main from './components/Main/Main';
 import { useContext, useState } from 'react';
-import ThemeContext from './ThemeContext';
-
+import { SectionHeading } from './components/SectionHeading/SectionHeading';
 function App() {
   const [isLightBackground, setIsLightBackground] = useState(false);
 
   const [hamActive, setHamActive] = useState(false);
 
   const handleToggle = () => {
+    console.log('toggle');
     setIsLightBackground(!isLightBackground);
   };
 
@@ -24,6 +24,7 @@ function App() {
           setHamActive={setHamActive}
         />
         <Main mode={isLightBackground} />
+        <SectionHeading name='About Me' />
       </div>
     </div>
   );

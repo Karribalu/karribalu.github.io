@@ -26,6 +26,7 @@
     font-size: 28px;
     font-weight: 700;
     align-items: center;
+    cursor: pointer;
 }
 
 .toggle{
@@ -75,24 +76,23 @@
     transform: translateX(0%);
     transition: all 0.5s ease-in-out;
     padding-left: 5%;
-        padding-top: 3.3%;
-        position: fixed;
-        display: flex;
-        top: 0;
-        flex-direction: column;
-        width: 220px;
-        height: 400px;
-        background-color: #c53b97;
-        align-content: center;
-        gap: 30px;
-        color: white;
-        font-size: 25px;
-        font-weight: 600;
-        line-height: normal;
-        border-radius: 0px 0px 20px 0px;
-        background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 83.28%, #70083B 98.49%);
-        z-index: 1000000;
-    }
+    padding-top: 3.3%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    width: 220px;
+    height: 400px;
+    background-color: #c53b97;
+    align-content: center;
+    gap: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 0px 0px 20px 0px;
+    background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 83.28%, #70083B 98.49%);
+}
 
 
 .sidebar-links{
@@ -100,6 +100,7 @@
     flex-direction: column;
     gap: 50px;
     justify-content: justify;
+    cursor: pointer;
 }
 
 .sidebar-header{
@@ -125,6 +126,7 @@
     
         .hamburger {
             display: block;
+            padding-top: 15px;
         }
 }
 
@@ -142,4 +144,5 @@
     .hamburger{
         display: block;
     }
+    
 }

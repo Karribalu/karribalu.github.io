@@ -3,8 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height:70vh;
+    
 }
 .main-left-dark
 {
@@ -71,13 +70,15 @@
 }
 .social-links-dark .social-link:hover{
     background-color: #820A5B;
-    border-radius: 60%;
+    border-radius: 50%;
     height: 52px;
+    cursor: pointer;
 }
 
 .social-links-light .social-link{
     background-color: #820A5B;
     border-radius: 50%;
+    height: 51px;
     cursor: pointer;
 }
 
@@ -85,4 +86,146 @@
     border-radius: 60%;
     height: 52px;
 }
+@media(max-width: 390px){
+    .span-description {
+        font-size: 20px;
+        justify-content: justify;
+        padding-right: 5px;
+    }
+     .social-links-light .social-link{
+        width: 51px;
+        height: 51px;
+    }
+    .social-links-dark .social-link{
+        width: 51px;
+        height: 51px;
+    }
+    .social-links-light{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .social-links-dark{
+        margin-right:10px;
+        margin-left: 40px;
+        
+    }
+    
 
+    .social-links-light .social-link:hover {
+        height: 40px;
+        border-radius: 50%;
+    }
+    .social-links-dark .social-link:hover {
+        height: 45px;
+    }
+}
+
+@media(max-width: 778px){
+    .main-right{
+       margin-left: 40px;
+    }
+    .hero-image {
+        width: 90%;
+    }
+    
+    .span-hello 
+    {
+        font-size: 30px;
+        margin-left: -10%;
+    }
+    .span-name
+    {
+        font-size: 35px;
+        margin-left: -10%;
+    }
+    .span-description
+    {
+        font-size: 20px;
+        justify-content: justify;
+        padding-right: 5px;
+    }
+
+    .social-links-light .social-link{
+        height: 60px;
+        
+    }
+    .social-links-dark .social-link{
+        height: 60px;
+    }
+
+    .social-links-light .social-link:hover {
+        
+        height: 55px;
+    }
+    .social-links-dark .social-link:hover {
+        height: 55px;
+    }
+
+}
+
+@media(max-width: 990px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+        margin-top: 45%;
+        padding-right: 10px;
+    }
+    .hero-image{
+        height: 90%;
+    }
+    
+    .span-hello 
+    {
+        font-size: 40px;
+        text-align: center;
+    }
+    .span-name
+    {
+        font-size: 45px;
+        text-align: center;
+    }
+    .span-description
+    {
+        font-size: 20px;
+        justify-content: justify;
+    }
+    .social-links-light, .social-links-dark{
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links-light, .social-links-dark{
+        display: flex;
+        flex-direction: row;
+        gap: 7rem;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .social-links-light .social-link{
+        height: 85px;
+        
+    }
+    .social-links-dark .social-link{
+        height: 85px;
+    }
+
+    .social-links-light .social-link:hover {
+        
+        height: 80px;
+    }
+    .social-links-dark .social-link:hover {
+        height: 80px;
+    }
+}

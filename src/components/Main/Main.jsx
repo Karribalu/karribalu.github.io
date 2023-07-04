@@ -23,22 +23,22 @@ const Main = ({mode}) =>{
                     <span className="span-name">I'm Bala Subramanyam</span>
                     <span className="span-description">Passionate full stack developer experienced in React, Java spring boot and exploring Web3 Space actively and currently working in JPMC, Glasgow</span>
                     <div className={mode? "social-links-light" : "social-links-dark"}>
-                       <a href="">
+                       <a href="" className="anchor">
                            <img src={linkedin} alt="" className="social-link"/>
                        </a>
-                       <a href="">
-                            <img src={github} alt="" className="social-link"/>
+                       <a href="" className="anchor">
+                            <img src={github} alt="" className="social-link social-link-git"/>
                         </a>
-                        <a href="">
+                        <a href="" className="anchor">
                             <img src={twitter} alt="" className="social-link"/>
                         </a>
-                        <a href="">
+                        <a href="" className="anchor">
                             <img src={mail} alt="" className="social-link"/>
                         </a>
                     </div>
                 </div>
                 <div className="main-right">
-                <img src={heroImage} alt="" />
+                <img src={heroImage} alt="" className="hero-image"/>
                 </div>
             </div>
         </div>
