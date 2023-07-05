@@ -19,6 +19,7 @@ const Main = ({mode}) =>{
         <div>
             <div className="main">
                 <div className={mode ? "main-left-light" : "main-left-dark"}>
+                    
                     <span className="span-hello">Hello!!</span>
                     <span className="span-name">I'm Bala Subramanyam</span>
                     <span className="span-description">Passionate full stack developer experienced in React, Java spring boot and exploring Web3 Space actively and currently working in JPMC, Glasgow</span>
@@ -27,7 +28,7 @@ const Main = ({mode}) =>{
                            <img src={linkedin} alt="" className="social-link"/>
                        </a>
                        <a href="" className="anchor">
-                            <img src={github} alt="" className="social-link social-link-git"/>
+                            <img src={github} alt="" className="social-link"/>
                         </a>
                         <a href="" className="anchor">
                             <img src={twitter} alt="" className="social-link"/>
@@ -37,9 +38,8 @@ const Main = ({mode}) =>{
                         </a>
                     </div>
                 </div>
-                <div className="main-right">
-                <img src={heroImage} alt="" className="hero-image"/>
-                </div>
+
+                <img src={heroImage} alt="" className="main-right"/>
             </div>
         </div>
     )

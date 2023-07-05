@@ -1,231 +1,113 @@
 .main{
     display: flex;
-    flex-direction: row;
+    margin: 0px 5%;;
     justify-content: space-between;
-    align-items: center;
-    
 }
-.main-left-dark
-{
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:700px;
-    gap: 2rem;
-    margin-left: 60px;
+
+.main-right{
+    width: 700px;
 }
 .main-left-light{
-    color: #820A5B;
+    padding-top: 120px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 700px;
-    gap: 2rem;
-    margin-left: 60px;
+    color:#820A5B;
+    gap: 25px;
+}
+.main-left-dark{
+    padding-top: 120px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    gap: 25px;
 }
 .span-hello{
-   
     font-size: 50px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 400;
-    line-height: 56px;
 }
 .span-name{
-    
     font-size: 55px;
-    font-family: Montserrat;
-    font-style: normal;
     font-weight: 700;
-    line-height: 56px;
 }
-
 .span-description{
-    
-    font-size: 25px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 56px;
+    width: 650px;
+    font-size: 20px;
+    line-height: 55px;
 }
-.social-links-light{
+.social-links-dark, .social-links-light{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 200px;
-    gap: 2rem;
-}
-
-.social-links-dark {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 200px;
-    gap: 2rem;
-}
-
-.social-links-dark .social-link{
-    cursor: pointer;
-}
-.social-links-dark .social-link:hover{
-    background-color: #820A5B;
-    border-radius: 50%;
-    height: 52px;
-    cursor: pointer;
+    gap: 40px;
 }
 
 .social-links-light .social-link{
-    background-color: #820A5B;
     border-radius: 50%;
-    height: 51px;
-    cursor: pointer;
+    background-color: #820A5B;
 }
 
-.social-links-light .social-link:hover {
-    border-radius: 60%;
-    height: 52px;
-}
-@media(max-width: 390px){
-    .span-description {
-        font-size: 20px;
-        justify-content: justify;
-        padding-right: 5px;
-    }
-     .social-links-light .social-link{
-        width: 51px;
-        height: 51px;
-    }
-    .social-links-dark .social-link{
-        width: 51px;
-        height: 51px;
-    }
-    .social-links-light{
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        align-items: center;
-        text-align: center;
-        margin-left: 10px;
-    }
-    .social-links-dark{
-        margin-right:10px;
-        margin-left: 40px;
-        
-    }
+@media screen and (min-width: 1024px){
     
-
-    .social-links-light .social-link:hover {
-        height: 40px;
-        border-radius: 50%;
-    }
-    .social-links-dark .social-link:hover {
-        height: 45px;
-    }
 }
 
-@media(max-width: 778px){
-    .main-right{
-       margin-left: 40px;
-    }
-    .hero-image {
-        width: 90%;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .main {
+            flex-direction: column-reverse;
+            margin: 0px 5%;
+        }
     
-    .span-hello 
-    {
-        font-size: 30px;
-        margin-left: -10%;
-    }
-    .span-name
-    {
-        font-size: 35px;
-        margin-left: -10%;
-    }
-    .span-description
-    {
-        font-size: 20px;
-        justify-content: justify;
-        padding-right: 5px;
-    }
-
-    .social-links-light .social-link{
-        height: 60px;
-        
-    }
-    .social-links-dark .social-link{
-        height: 60px;
-    }
-
-    .social-links-light .social-link:hover {
-        
-        height: 55px;
-    }
-    .social-links-dark .social-link:hover {
-        height: 55px;
-    }
-
+        .main-right {
+            width: 80%;
+            margin: 25px 0px 0px 50px;
+        }
+    
+        .main-left-light,
+        .main-left-dark {
+            padding-top: 30px;
+            align-items: center;
+        }
+    
+        .span-hello {
+            font-size: 25px;
+        }
+    
+        .span-name {
+            font-size: 29px;
+        }
+    
+        .span-description {
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 36px;
+            justify-content: center;
+        }
 }
-
-@media(max-width: 990px) {
+@media screen and (max-width: 767px) {
     .main{
-        display: flex;
         flex-direction: column-reverse;
+        
+    }
+    .main-right{
+        width: 90%;
+        margin: 25px 20px 0px 20px;
+    }
+    .main-left-light, .main-left-dark{
+        padding-top: 30px;
+        align-items: center;
+    }
+    .span-hello{
+        font-size: 25px;
+    }
+    .span-name{
+        font-size: 29px;
+    }
+    .span-description{
+        width: 400px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 36px;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 70vh;
-        margin-top: 45%;
-        padding-right: 10px;
-    }
-    .hero-image{
-        height: 90%;
-    }
-    
-    .span-hello 
-    {
-        font-size: 40px;
-        text-align: center;
-    }
-    .span-name
-    {
-        font-size: 45px;
-        text-align: center;
-    }
-    .span-description
-    {
-        font-size: 20px;
-        justify-content: justify;
-    }
-    .social-links-light, .social-links-dark{
-        display: flex;
-        flex-direction: row;
-        gap: 4rem;
-        align-items: center;
-        text-align: center;
-    }
-
-    .social-links-light, .social-links-dark{
-        display: flex;
-        flex-direction: row;
-        gap: 7rem;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .social-links-light .social-link{
-        height: 85px;
-        
-    }
-    .social-links-dark .social-link{
-        height: 85px;
-    }
-
-    .social-links-light .social-link:hover {
-        
-        height: 80px;
-    }
-    .social-links-dark .social-link:hover {
-        height: 80px;
     }
 }
+
