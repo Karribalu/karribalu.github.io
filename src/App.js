@@ -3,7 +3,8 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Main from './components/Main/Main';
 import { useContext, useState } from 'react';
-import { SectionHeading } from './components/SectionHeading/SectionHeading';
+
+import { AboutMe } from './components/AboutMe/AboutMe';
 function App() {
   const [isLightBackground, setIsLightBackground] = useState(false);
 
@@ -24,7 +25,7 @@ function App() {
           setHamActive={setHamActive}
         />
         <Main mode={isLightBackground} />
-        <SectionHeading name='About Me' />
+        <AboutMe mode={isLightBackground} />
       </div>
     </div>
   );

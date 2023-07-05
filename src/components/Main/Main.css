@@ -9,7 +9,7 @@
 }
 .main-left-light{
     padding-top: 120px;
-    height: 600px;
+    height: 540px;
     display: flex;
     flex-direction: column;
     color:#820A5B;
@@ -17,7 +17,7 @@
 }
 .main-left-dark{
     padding-top: 120px;
-    height: 600px;
+    height: 540px;
     display: flex;
     flex-direction: column;
     color:white;
@@ -46,10 +46,6 @@
     background-color: #820A5B;
 }
 
-@media screen and (min-width: 1024px){
-    
-}
-
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .main {
@@ -66,6 +62,7 @@
         .main-left-dark {
             padding-top: 30px;
             align-items: center;
+            height:330px;
         }
     
         .span-hello {
@@ -95,6 +92,7 @@
     .main-left-light, .main-left-dark{
         padding-top: 30px;
         align-items: center;
+        height: 400px;
     }
     .span-hello{
         font-size: 25px;

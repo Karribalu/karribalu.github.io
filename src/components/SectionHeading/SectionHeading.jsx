@@ -1,13 +1,14 @@
 import React from 'react'
 import './SectionHeading.css'
-export const SectionHeading = ({name}) => {
+import sectionLine from '../../assets/section-heading-line-light.svg';
+import sectionShade from '../../assets/section-heading-light.svg';
+export const SectionHeadingLight = ({name}) => {
   return(
-    <div>
         <div className="section-heading">
-            <div className="section-heading_line"></div>
-            <div className="section-heading_shade"></div>
-            <h1>{name}</h1>
+          <img src={sectionLine} alt="section-heading-line" className="section-heading-line"/>
+          <img src={sectionShade} alt="section-heading-shade" className="section-heading-shade"/>
+          <h1 className= "section-name">{name}</h1>
         </div>
-    </div>
    )
   }
+
