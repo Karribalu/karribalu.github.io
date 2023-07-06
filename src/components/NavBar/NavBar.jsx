@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useState } from "react";
 import logo from "../../assets/logo-white.svg"
 import {toggleDarkButton, toggleLightButton, logoColor} from "../../icons";
@@ -18,6 +18,12 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
         <img src = {logoColor} alt="logo" className="logo"/>
         }
         <div className="nav-links">
+            <Link to="about-me" className="nav-link" 
+            
+            smooth={true}
+            offset={-70}
+            duration={500}>
+        Career</Link>
             <Link to="skills" className="nav-link">Skills</Link>
             <Link to="experience" className="nav-link">Experience</Link>
             <Link to="projects" className="nav-link">Projects</Link>
@@ -36,6 +42,7 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
             </div>
             <div className={mode? "nav-line-light" : "nav-line-dark"}></div>
             <div className="sidebar-links">
+            <Link to="Career" className="nav-link">Career</Link>
             <Link to="skills" className="nav-link">Skills</Link>
             <Link to="experience" className="nav-link">Experience</Link>
             <Link to="projects" className="nav-link">Projects</Link>

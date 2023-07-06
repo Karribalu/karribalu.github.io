@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Main from './components/Main/Main';
 import { useContext, useState } from 'react';
-
+import { Career } from './components/Career/Career';
 import { AboutMe } from './components/AboutMe/AboutMe';
 function App() {
   const [isLightBackground, setIsLightBackground] = useState(false);
@@ -26,6 +26,7 @@ function App() {
         />
         <Main mode={isLightBackground} />
         <AboutMe mode={isLightBackground} />
+        <Career mode={isLightBackground} />
       </div>
     </div>
   );

@@ -1,0 +1,34 @@
+.education{
+    color:white;
+    opacity: 0.8;
+    background: #A85FCB;
+    width: 285px;
+    height: 360px;
+    border-radius: 30px;
+    border: 0.5px solid #FFF;
+}
+.education-logo{
+    width: 110px;
+    margin: 5% 0 0 31%;
+}
+.education-list{
+    margin-left:-10px;
+    margin-top: 30px;
+    list-style: circle url("../../assets/dot.svg");
+}
+.education-text{
+    margin: 5% 0 0 31%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.education-list-item{
+    margin-top: 30px;
+}
+.education-list-item-title{
+    font-size: 15px;
+}
+.education-list-item-text{
+    margin-top: -10px;
+    font-size: 13px;
+    font-weight: 500;
+}

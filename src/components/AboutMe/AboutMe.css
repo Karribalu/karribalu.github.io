@@ -7,4 +7,40 @@
     letter-spacing: 1.25px;
     margin-left: 10%;
     color:white;
+    margin: 3% 0 0 13%;
+}
+
+.about-me-content-dark {
+    width: 1275px;
+    height: 292px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 1.25px;
+    margin-left: 10%;
+    color:#310D5A;
+    margin: 3% 0 0 13%;
+}
+@media(max-width:767px) {
+    .about-me-content{
+        margin:10% 0 0 6%;
+        width:86%;
+        font-size: 19px;
+        line-height: 32px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .about-me{
+        align-items: center;
+        justify-content: center;
+    }
+    .about-me-content {
+            margin: 10% 0% 0 8%;
+            width: 84%;
+            font-size: 19px;
+            line-height: 32px;
+            text-align: center;
+    }
 }

@@ -1,0 +1,24 @@
+.achievements{
+    background: #A85FCB;
+    opacity: 0.8;
+    border-radius: 30px;
+    border: 0.5px solid #FFF;
+    width: 285px;
+    height: 360px;
+    color: #FFF;
+}
+.achievements-logo{
+    height: 120px;
+    width: 120px;
+}
+.achievements-logo-in{
+    background: white;
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    align-items: center;
+}
+.trophy{
+    width:60px;
+    margin: 20px 0 0 20px;
+}
