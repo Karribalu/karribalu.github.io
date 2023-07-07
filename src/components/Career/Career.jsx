@@ -4,6 +4,7 @@ import { SectionHeadingLight } from '../SectionHeading/SectionHeading';
 import { SectionHeadingDark } from '../SectionHeading/SectionHeadingDark';
 import { Education } from '../Career-Boxes/Education';
 import { Achievements } from '../Career-Boxes/Achievements';
+import { Jobs } from '../Career-Boxes/Jobs';
 export const Career = ({mode}) => {
   return(
     <div className='career'>
@@ -14,9 +15,9 @@ export const Career = ({mode}) => {
         )}
 
         <div className="career-boxes">
-            
             <Education/>
             <Achievements/>
+            <Jobs/>
         </div>
     </div>
    )

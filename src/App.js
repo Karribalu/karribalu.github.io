@@ -1,12 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Main from './components/Main/Main';
-import { useContext, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Career } from './components/Career/Career';
 import { AboutMe } from './components/AboutMe/AboutMe';
 function App() {
   const [isLightBackground, setIsLightBackground] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    if (width <= 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+    console.log(width);
+  }, []);
 
   const [hamActive, setHamActive] = useState(false);
 
@@ -26,7 +36,7 @@ function App() {
         />
         <Main mode={isLightBackground} />
         <AboutMe mode={isLightBackground} />
-        <Career mode={isLightBackground} />
+        {!isMobile && <Career mode={isLightBackground} />}
       </div>
     </div>
   );

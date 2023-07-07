@@ -1,4 +1,4 @@
-.achievements{
+.jobs {
     background: #A85FCB;
     opacity: 0.8;
     border-radius: 30px;
@@ -6,36 +6,41 @@
     width: 285px;
     height: 360px;
     color: #FFF;
+    
 }
-.achievements-logo{
+
+.jobs-logo {
     height: 120px;
     width: 120px;
     margin: 20px 0 0 33%;
 }
-.achievements-logo-in{ 
+
+.jobs-logo-in {
     background: white;
     border-radius: 50%;
-    height:95px;
-    width:95px;
+    height: 95px;
+    width: 95px;
     align-items: center;
 }
-.trophy{
-    width:50px;
-    margin: 20px 0 0 25%;
+
+.jobs-logo-svg {
+    width: 50px;
+    margin: 25px 0 0 25%;
 }
-.achievements-heading{
+
+.jobs-heading {
     font-size: 20px;
     font-weight: 600;
-    margin: 5px 0 0 26%;
+    margin: 5px 0 0 42%;
+    
 }
-.year{
+
+.year {
     margin: 25px 0 0 42%;
 }
 
-.achievements-box{
-    margin-top: 30px;
-    font-size:15px;
+.jobs-text{
+    margin: 35px 0 0 0;
     text-align: center;
-    line-height: 25px;
     font-weight: 500;
 }

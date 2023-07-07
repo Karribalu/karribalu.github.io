@@ -1,4 +1,9 @@
+.career{
+    margin: 5% 10% 0 0;
+}
 .career-boxes{
     display: flex;
-    gap:50px;
+    justify-content: space-between;
+    gap:30px;
+    margin: 5% 0 0 8%;
 }
