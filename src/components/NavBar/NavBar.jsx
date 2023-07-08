@@ -7,7 +7,7 @@ import "./NavBar.css"
 const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
     
     return (
-    <div>
+    <div className="navbar">
         <nav className={!mode ? "navbar-light": "navbar-dark"}>
         
         <RxHamburgerMenu className="hamburger" onClick={()=>setHamActive(!hamActive)}/>
@@ -18,12 +18,13 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
         <img src = {logoColor} alt="logo" className="logo"/>
         }
         <div className="nav-links">
-            <Link to="about-me" className="nav-link" 
-            
+            <Link to="career" className="nav-link" 
+            activeClass="navbar-active"
             smooth={true}
             offset={-70}
             duration={500}>
-        Career</Link>
+            Career
+            </Link>
             <Link to="skills" className="nav-link">Skills</Link>
             <Link to="experience" className="nav-link">Experience</Link>
             <Link to="projects" className="nav-link">Projects</Link>

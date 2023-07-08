@@ -26,17 +26,19 @@ function App() {
   };
 
   return (
-    <div className={isLightBackground ? 'light-bg' : 'dark-bg'}>
-      <div className={hamActive ? 'blur' : ''}>
-        <NavBar
-          mode={isLightBackground}
-          onToggle={handleToggle}
-          hamActive={hamActive}
-          setHamActive={setHamActive}
-        />
-        <Main mode={isLightBackground} />
-        <AboutMe mode={isLightBackground} />
-        {!isMobile && <Career mode={isLightBackground} />}
+    <div className='app'>
+      <div className={isLightBackground ? 'light-bg' : 'dark-bg'}>
+        <div className={hamActive ? 'blur' : ''}>
+          <NavBar
+            mode={isLightBackground}
+            onToggle={handleToggle}
+            hamActive={hamActive}
+            setHamActive={setHamActive}
+          />
+          <Main mode={isLightBackground} />
+          <AboutMe mode={isLightBackground} />
+          {!isMobile && <Career mode={isLightBackground} />}
+        </div>
       </div>
     </div>
   );

@@ -1,13 +1,17 @@
+.navbar-active{
+    background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 83.28%, #70083B 98.49%);
+}
+
 .dark-bg{
-    background-image: url('./assets/dark-bg.png');
+    background-image: url('./assets/background-attached.png');
     background-size: cover;
     height: fit-content;
-    min-width: 100vw;
     width: fit-content;
+    min-width: 100vw;
     min-height: 200vh;
 }
 .light-bg{
-    background-image: url('./assets/light-bg.png');
+    background-image: url('./assets/total-bg-light.svg');
     background-size: cover;
     height: fit-content;
     width: fit-content;
@@ -31,6 +35,12 @@
     #carrer-app{
         display: none;
     }
+}
+
+@media screen and (min-width: 1920px) {
+   .app{
+        width: 100px;
+   }
 }
 
 

@@ -2,6 +2,7 @@
     display: flex;
     margin: 0px 5%;;
     justify-content: space-between;
+    padding-top: 5%;
 }
 
 .main-right{
@@ -41,16 +42,14 @@
     gap: 40px;
 }
 
-.social-links-light .social-link{
-    border-radius: 50%;
-    background-color: #820A5B;
-}
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .main {
             flex-direction: column-reverse;
             margin: 0px 5%;
+            padding-top: 5%;
         }
     
         .main-right {
@@ -83,7 +82,7 @@
 @media screen and (max-width: 767px) {
     .main{
         flex-direction: column-reverse;
-        
+        padding-top: 20%;
     }
     .main-right{
         width: 90%;

@@ -22,7 +22,19 @@
     margin: 3% 0 0 13%;
 }
 @media(max-width:767px) {
+    .about-me {
+        align-items: center;
+        justify-content: center;
+    }
+    
     .about-me-content{
+        margin:10% 0 0 6%;
+        width:86%;
+        font-size: 19px;
+        line-height: 32px;
+        text-align: center;
+    }
+    .about-me-content-dark {
         margin:10% 0 0 6%;
         width:86%;
         font-size: 19px;
@@ -42,5 +54,12 @@
             font-size: 19px;
             line-height: 32px;
             text-align: center;
+    }
+    .about-me-content-dark {
+        margin: 10% 0% 0 8%;
+        width: 84%;
+        font-size: 19px;
+        line-height: 32px;
+        text-align: center;
     }
 }
