@@ -4,6 +4,7 @@ import Main from './components/Main/Main';
 import { useState, useEffect } from 'react';
 import { Career } from './components/Career/Career';
 import { AboutMe } from './components/AboutMe/AboutMe';
+import { Skills } from './components/Skills/Skills';
 function App() {
   const [isLightBackground, setIsLightBackground] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -38,6 +39,7 @@ function App() {
           <Main mode={isLightBackground} />
           <AboutMe mode={isLightBackground} />
           {!isMobile && <Career mode={isLightBackground} />}
+          {!isMobile && <Skills mode={isLightBackground} />}
         </div>
       </div>
     </div>

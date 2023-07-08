@@ -10,6 +10,8 @@ import linkedinLight from './assets/linkedin-light.svg';
 import githubLight from './assets/github-light.svg';
 import twitterLight from './assets/twitter-light.svg';
 import mailLight from './assets/mail-light.svg';
+import trollyManLight from './assets/trolly-man-light.svg';
+import trollyManDark from './assets/trolly-man-dark.svg';
 export {
   toggleDarkButton,
   toggleLightButton,
@@ -23,4 +25,6 @@ export {
   githubLight,
   twitterLight,
   mailLight,
+  trollyManLight,
+  trollyManDark,
 };

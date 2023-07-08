@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     height: 80px;
-    
+    z-index:1;
 }
 
 .navbar-light{
@@ -43,6 +43,16 @@
     cursor: pointer;
 }
 
+
+.navbar-dark .nav-links .nav-link:hover{
+    border-bottom: 2px solid #820A5B;
+    padding-bottom: 5px;
+}
+
+.navbar-light .nav-links .nav-link:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
 .toggle{
     width: 80px;
     height: 39.507px;

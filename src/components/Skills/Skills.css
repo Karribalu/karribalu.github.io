@@ -1,0 +1,30 @@
+.skills{
+    height: 1100px;
+    margin: 5% 10% 0 0;
+}
+.skills-container{
+    margin: 5% 12%;
+    position: relative;
+}
+
+.trolly-man{
+    position: absolute;
+    top: -80px;
+    left: 0;
+    object-fit: cover;
+    
+}
+.skills-set{
+    left: 40px;
+    position: absolute;
+}
+
+.nav-line-dark-skills {
+    width:100%;
+    height: 2px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, rgba(248, 244, 244, 0.00) 0%, rgba(232, 230, 230, 0.48) 51.56%, rgba(217, 217, 217, 0.00) 100%);
+    position: absolute; 
+    top: 740px;
+    left: 170px;
+}

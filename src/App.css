@@ -1,7 +1,11 @@
-.navbar-active{
-    background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 83.28%, #70083B 98.49%);
+.navbar-light .navbar-active{
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
 }
-
+.navbar-dark .navbar-active {
+    border-bottom: 2px solid #820A5B;
+    padding-bottom: 5px;
+}
 .dark-bg{
     background-image: url('./assets/background-attached.png');
     background-size: cover;
