@@ -31,7 +31,7 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
             activeClass="navbar-active"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className="nav-link">
                 Skills
