@@ -80,10 +80,7 @@ export const Experience = ({mode}) => {
             <LargeExperienceBox mode = {mode} job ={job1} className="one"/>
             </div>
             <div className='two'>
-
             <SmallExperienceBox mode = {mode} job ={job2} className="two"/>
-            </div>
-            <div className='three'>
             <SmallExperienceBox mode = {mode} job ={job3} className="three"/>
             </div>
         </div>
