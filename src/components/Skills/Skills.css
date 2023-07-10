@@ -1,6 +1,7 @@
 .skills{
     height: 1100px;
     margin: 5% 10% 0 0;
+    align-items: center;
 }
 .skills-container{
     margin: 5% 12%;
