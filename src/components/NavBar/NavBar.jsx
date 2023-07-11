@@ -45,7 +45,14 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
             className="nav-link">
                 Experience
             </Link>
-            <Link to="projects" className="nav-link">Projects</Link>
+            <Link to="projects" 
+            activeClass="navbar-active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="nav-link">
+                Projects</Link>
             <Link to="contact" className="nav-link">Contact</Link>
         </div>
         {!mode?

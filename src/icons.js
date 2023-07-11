@@ -27,6 +27,13 @@ import datascience from './assets/skills-icons/datascience.svg';
 import clustering from './assets/skills-icons/clustering.svg';
 import dataanalytics from './assets/skills-icons/data-analytics.svg';
 import sklearn from './assets/skills-icons/scikit.svg';
+import hardhat from './assets/skills-icons/hardhat.svg';
+import react from './assets/skills-icons/react.svg';
+import js from './assets/skills-icons/js.svg';
+import solidity from './assets/skills-icons/solidity.svg';
+import html from './assets/skills-icons/html.svg';
+import projectGroup from './assets/project-group.svg';
+import css from './assets/skills-icons/css.svg';
 export {
   toggleDarkButton,
   toggleLightButton,
@@ -57,4 +64,11 @@ export {
   clustering,
   dataanalytics,
   sklearn,
+  hardhat,
+  react,
+  js,
+  solidity,
+  html,
+  projectGroup,
+  css,
 };
