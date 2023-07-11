@@ -6,6 +6,7 @@ import { Career } from './components/Career/Career';
 import { AboutMe } from './components/AboutMe/AboutMe';
 import { Skills } from './components/Skills/Skills';
 import { Experience } from './components/Experience/Experience';
+import { Projects } from './components/Projects/Projects';
 function App() {
   const [isLightBackground, setIsLightBackground] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -41,7 +42,8 @@ function App() {
           <AboutMe mode={isLightBackground} />
           {!isMobile && <Career mode={isLightBackground} />}
           {!isMobile && <Skills mode={isLightBackground} />}
-          <Experience mode={isLightBackground} />
+          {!isMobile && <Experience mode={isLightBackground} />}
+          <Projects mode={isLightBackground} />
         </div>
       </div>
     </div>

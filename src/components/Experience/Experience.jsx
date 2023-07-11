@@ -33,10 +33,9 @@ export const Experience = ({mode}) => {
         description: [
           'Worked as DevOps Engineer for the Identity Security Product',
           'Worked on building the Jenkins Pipeline which cleans up the workspaces.',
-          'Found a few bugs which is failing the pipeline after which the performance was increased by 12 %',
           'Worked on the Jenkins Pipeline which cleans up the workspaces.',
           'Written some terraform files to create a QA Workspace',
-          'Got to learn some new containerization and Orchestration tools like Docker and kubernetes respectively.'
+          'Worked with containerization and orchestration tools like Docker and kubernetes respectively.'
         ],
         technologies: [
             [Jenkins, 'Jenkins'],
