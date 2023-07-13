@@ -19,9 +19,11 @@ export const SingleProject = ({mode, project}) => {
             </div>
 
             <div className="singleProject_body_links">
-                <a href={project.link} target="_blank" class="links_anchor">
+                {project.link === '' ? null :
+                <a href={project.link} target="_blank" class="links_anchor" title="Website">
                 <BsGlobe size = "43px" color='white'/>
                 </a>
+                }
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
                 <BsGithub size = "43px" color='white'/>
                 </a>

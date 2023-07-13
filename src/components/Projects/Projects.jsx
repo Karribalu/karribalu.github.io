@@ -56,7 +56,8 @@ export const Projects = ({mode}) => {
         <div className='projects_container'>
             <SingleProject mode={mode} project={project1} />
             <SingleProject mode={mode} project={project2} />
-            {/* <SingleProject mode={mode} project={project3} /> */}
+            <SingleProject mode={mode} project={project3} />
+           
         </div>
     </div>
    )
