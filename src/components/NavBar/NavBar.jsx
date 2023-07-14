@@ -5,7 +5,9 @@ import {toggleDarkButton, toggleLightButton, logoColor} from "../../icons";
 import {RxHamburgerMenu, RxCross1} from "react-icons/rx";
 import "./NavBar.css"
 const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
-    
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+        };
     return (
     <div className="navbar">
         <nav className={!mode ? "navbar-light": "navbar-dark"}>
@@ -13,16 +15,16 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
         <RxHamburgerMenu className="hamburger" onClick={()=>setHamActive(!hamActive)}/>
         
         {!mode ? 
-        <img src = {logo} alt="logo" className="logo"/>
+        <img src = {logo} onClick = {scrollToTop}alt="logo" className="logo"/>
         :
-        <img src = {logoColor} alt="logo" className="logo"/>
+        <img src = {logoColor} onClick = {scrollToTop} alt="logo" className="logo"/>
         }
         <div className="nav-links">
             <Link to="career"
             activeClass="navbar-active"
             spy={true}
             smooth={true}
-            offset={-200}
+            offset={-50}
             duration={500}
             className="nav-link">
             Career
@@ -31,7 +33,7 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
             activeClass="navbar-active"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className="nav-link">
                 Skills
@@ -40,7 +42,7 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
             activeClass="navbar-active"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
             className="nav-link">
                 Experience
@@ -49,11 +51,18 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
             activeClass="navbar-active"
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-50}
             duration={500}
+
             className="nav-link">
                 Projects</Link>
-            <Link to="contact" className="nav-link">Contact</Link>
+            <Link to="footer" 
+            activeClass="navbar-active"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            className="nav-link">Contact</Link>
         </div>
         {!mode?
         <img src={toggleDarkButton} alt="toggle dark" className="toggle" onClick={onToggle}/>

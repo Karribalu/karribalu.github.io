@@ -5,6 +5,9 @@
     height: 80px;
     z-index:1;
 }
+.logo{
+    cursor: pointer;
+}
 
 .navbar-light{
     

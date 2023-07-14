@@ -6,7 +6,7 @@ export const SingleProject = ({mode, project}) => {
   return(
     <div className= {mode ? "singleProjectLight" : "singleProjectDark"}>
         <div className="singleProject_head">
-            <h2 className= {mode ? "" : "singleProject_head_title"}>{project.title}</h2>
+            <span className= "singleProject_head_title">{project.title}</span>
         </div>
         <div className="singleProject_body">
             <p className="singleProject_body_description">{project.description}</p>

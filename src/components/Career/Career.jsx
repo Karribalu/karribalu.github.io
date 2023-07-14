@@ -15,9 +15,9 @@ export const Career = ({mode}) => {
         )}
 
         <div className="career-boxes">
-            <Education/>
-            <Achievements/>
-            <Jobs/>
+            <Education mode = {mode}/>
+            <Achievements mode = {mode}/>
+            <Jobs mode = {mode}/>
         </div>
     </div>
    )

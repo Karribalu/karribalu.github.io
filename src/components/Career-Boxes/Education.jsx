@@ -1,9 +1,9 @@
 import React from 'react'
 import './Education.css'
 import education_logo from '../../assets/education.svg';
-export const Education = () => {
+export const Education = ({mode}) => {
   return(
-    <div className='education'>
+    <div className={mode?'education-light': "education"}>
         <img src={education_logo} alt="education-logo" className="education-logo"/>
         <h3 className="education-text"> Education </h3>
         <ul className="education-list">

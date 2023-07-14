@@ -1,32 +1,23 @@
-.achievements{
-    background: #A85FCB;
-    opacity: 0.8;
+.achievements, .achievements-light{
+    background: rgb(168, 95, 203, 0.8);
+    
     border-radius: 30px;
     border: 0.5px solid #FFF;
-    width: 285px;
-    height: 360px;
+    width: 400px;
+    height: 500px;
     color: #FFF;
 }
+.achievements-light{
+    background: rgb(168, 95, 203);
+}
 .achievements-logo{
-    height: 120px;
-    width: 120px;
-    margin: 20px 0 0 33%;
-}
-.achievements-logo-in{ 
-    background: white;
-    border-radius: 50%;
-    height:95px;
-    width:95px;
-    align-items: center;
-}
-.trophy{
-    width:50px;
-    margin: 20px 0 0 25%;
+    width: 160px;
+    margin: 10% 0 0 31%;
 }
 .achievements-heading{
-    font-size: 20px;
-    font-weight: 600;
-    margin: 5px 0 0 26%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
 }
 .year{
     margin: 25px 0 0 42%;
@@ -34,8 +25,9 @@
 
 .achievements-box{
     margin-top: 30px;
-    font-size:15px;
+    font-size:18px;
     text-align: center;
     line-height: 25px;
     font-weight: 500;
+    
 }
