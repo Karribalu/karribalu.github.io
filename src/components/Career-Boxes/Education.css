@@ -35,3 +35,28 @@
     font-weight: 500;
     padding-right: 30px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .education, .education-light{
+    width: 300px;
+    height: 400px;
+    }
+    .education-logo{
+    width: 100px;
+    margin: 10% 0 0 33%;   
+    }
+    .education-text{
+    
+    font-size: 20px;
+    }
+
+    .education-list-item-title{
+    font-size: 15px;
+}
+.education-list-item-text {
+    margin-top: -5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+}

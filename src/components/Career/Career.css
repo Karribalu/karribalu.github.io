@@ -7,3 +7,20 @@
     gap:30px;
     margin: 5% 0 0 8%;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .career{
+        margin: 5% 5% 0 0;
+        
+    }
+    .career-boxes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:30px;
+        margin: 5% 0 0 34%;
+    }
+}
+@media screen and (max-width: 767px){
+
+}

@@ -1,3 +1,4 @@
+
 .experience-container{
     display:flex;
     flex-direction:column;
@@ -11,4 +12,29 @@
     gap: 15rem;
     align-items:center;
     margin-bottom:1rem;
+}
+.one-tablet{
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .two{
+        margin-top: 100px;
+        display:flex;
+        flex-direction:column;
+        gap: 5rem;
+        align-items:center;
+        margin-bottom:1rem;
+    }
+
+    .one-tablet{
+        display: block;
+    }
+    .one{
+        display: none;
+    }
+    .experience-heading{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
 }

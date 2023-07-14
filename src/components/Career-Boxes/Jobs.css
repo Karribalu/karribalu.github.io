@@ -34,3 +34,27 @@
     font-weight: 500;
     text-align: center;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+.jobs,.jobs-light {
+        width: 300px;
+        height: 400px;
+    }
+
+    .jobs-logo {
+    width: 100px;
+    margin: 10% 0 0 33%;
+}
+.jobs-heading {
+    font-size: 20px;    
+}
+.year {
+    font-size: 20px;
+}
+.jobs-text{
+    font-size: 15px;
+}
+
+
+}
