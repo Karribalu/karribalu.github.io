@@ -1,46 +1,36 @@
-.jobs {
-    background: #A85FCB;
-    opacity: 0.8;
+.jobs,.jobs-light {
+    background: rgb(168, 95, 203, 0.8);
     border-radius: 30px;
     border: 0.5px solid #FFF;
-    width: 285px;
-    height: 360px;
+    width: 400px;
+    height: 500px;
     color: #FFF;
     
 }
+.jobs-light {
+    background: rgb(168, 95, 203);
+}
 
 .jobs-logo {
-    height: 120px;
-    width: 120px;
-    margin: 20px 0 0 33%;
+    width: 160px;
+    margin: 10% 0 0 31%;
 }
 
-.jobs-logo-in {
-    background: white;
-    border-radius: 50%;
-    height: 95px;
-    width: 95px;
-    align-items: center;
-}
-
-.jobs-logo-svg {
-    width: 50px;
-    margin: 25px 0 0 25%;
-}
 
 .jobs-heading {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 5px 0 0 42%;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
     
 }
 
 .year {
-    margin: 25px 0 0 42%;
+    font-size: 30px;
+    text-align: justify;
 }
 
 .jobs-text{
-    margin: 35px 0 0 0;
-    text-align: center;
+    font-size: 18px;
     font-weight: 500;
+    text-align: center;
 }

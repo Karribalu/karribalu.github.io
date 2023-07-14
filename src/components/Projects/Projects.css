@@ -8,5 +8,7 @@
     justify-items: center;
     align-items: center;
     min-height: 100vh;
-    gap: 50px;   
+    
+    column-gap: 0px;
+    row-gap: 30px;
 }

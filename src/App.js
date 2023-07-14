@@ -45,9 +45,8 @@ function App() {
           {!isMobile && <Career mode={isLightBackground} />}
           {!isMobile && <Skills mode={isLightBackground} />}
           {!isMobile && <Experience mode={isLightBackground} />}
-          <Projects mode={isLightBackground} />
-
-          <Footbar mode={isLightBackground} />
+          {!isMobile && <Projects mode={isLightBackground} />}
+          {!isMobile && <Footbar mode={isLightBackground} />}
         </div>
       </div>
     </div>
