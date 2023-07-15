@@ -53,8 +53,9 @@
         }
     
         .main-right {
-            width: 80%;
-            margin: 25px 0px 0px 50px;
+            width: 60%;
+            align-items: center;
+            margin: 25px 20px 0px 20%;
         }
     
         .main-left-light,

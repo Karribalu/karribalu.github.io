@@ -48,11 +48,13 @@ export const Projects = ({mode}) => {
 
   return(
     <div className='projects'>
+        <div className='projects_heading'>
         {!mode ? (
             <SectionHeadingLight name='Projects' />
         ) : (
           <SectionHeadingDark name='Projects' />
         )}
+        </div>
         <div className='projects_container'>
             <SingleProject mode={mode} project={project1} />
             <SingleProject mode={mode} project={project2} />

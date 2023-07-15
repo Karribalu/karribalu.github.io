@@ -69,15 +69,21 @@ export const Experience = ({mode}) => {
     }
   return(
     <div className='experience'>
+      <div className='experience-heading'>
          {!mode ? (
             <SectionHeadingLight name='Experience' />
         ) : (
           <SectionHeadingDark name='Experience' />
         )}
+        </div>
         <div className='experience-container'>
             <div className='one'>
             <LargeExperienceBox mode = {mode} job ={job1} className="one"/>
             </div>
+            <div className='one-tablet'>
+            <SmallExperienceBox mode = {mode} job ={job2} className="one-tablet"/>
+            </div>
+            
             <div className='two'>
             <SmallExperienceBox mode = {mode} job ={job2} className="two"/>
             <SmallExperienceBox mode = {mode} job ={job3} className="three"/>

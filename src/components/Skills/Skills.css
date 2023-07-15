@@ -1,7 +1,8 @@
 .skills{
-    height: 1100px;
+    height: 900px;
     margin: 5% 10% 0 0;
     align-items: center;
+    
 }
 .skills-container{
     margin: 5% 12%;
@@ -13,11 +14,18 @@
     top: -80px;
     left: 0;
     object-fit: cover;
+    width: 1300px;
     
 }
 .skills-set{
-    left: 40px;
+    left: 100px;
+    top: 20px;
     position: absolute;
+    
+}
+.skill-set-icon{
+    width: 800px;
+    
 }
 
 .nav-line-dark-skills {
@@ -26,6 +34,29 @@
     flex-shrink: 0;
     background: linear-gradient(90deg, rgba(248, 244, 244, 0.00) 0%, rgba(232, 230, 230, 0.48) 51.56%, rgba(217, 217, 217, 0.00) 100%);
     position: absolute; 
-    top: 740px;
+    top: 632px;
     left: 170px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* .trolly-man{
+        /* width: 100%; 
+        height: 60%;
+        margin-left: 15%;
+    }
+    .skill-set-icon{
+        width: 55%;
+        margin-left: 20%;
+    }
+    .skills-container{
+    /* margin-left: 500px; 
+    position: relative;
+    height: 700px;
+    }
+    .nav-line-dark-skills{
+        top:400px;
+    } */
+    .skills{
+        display: none;
+    }
 }
