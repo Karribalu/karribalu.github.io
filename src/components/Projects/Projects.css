@@ -1,5 +1,5 @@
 .projects{
-    min-height: 1500px;
+    min-height: 1000px;
     
 }
 
@@ -12,6 +12,10 @@
     
     column-gap: 0px;
     row-gap: 30px;
+}
+.projects_heading {
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

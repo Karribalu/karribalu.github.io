@@ -9,12 +9,16 @@
     margin-top: 100px;
     display:flex;
     flex-direction:row;
-    gap: 15rem;
+    gap: 5rem;
     align-items:center;
     margin-bottom:1rem;
 }
 .one-tablet{
     display: none;
+}
+.experience-heading {
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

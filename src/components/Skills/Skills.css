@@ -1,5 +1,5 @@
 .skills{
-    height: 1100px;
+    height: 900px;
     margin: 5% 10% 0 0;
     align-items: center;
     
@@ -14,11 +14,18 @@
     top: -80px;
     left: 0;
     object-fit: cover;
+    width: 1300px;
     
 }
 .skills-set{
-    left: 40px;
+    left: 100px;
+    top: 20px;
     position: absolute;
+    
+}
+.skill-set-icon{
+    width: 800px;
+    
 }
 
 .nav-line-dark-skills {
@@ -27,7 +34,7 @@
     flex-shrink: 0;
     background: linear-gradient(90deg, rgba(248, 244, 244, 0.00) 0%, rgba(232, 230, 230, 0.48) 51.56%, rgba(217, 217, 217, 0.00) 100%);
     position: absolute; 
-    top: 740px;
+    top: 632px;
     left: 170px;
 }
 
