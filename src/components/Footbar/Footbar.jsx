@@ -16,7 +16,7 @@ export const Footbar = ({mode}) => {
             <div className='footer_left'>
                 <span className='left_head'>Let's Connect</span>
                 <span className='email'>karri.balu2339@gmail.com</span>
-                <span className='phone'>+44 7367675677, +919652138888</span>
+                <span className='phone'>+44 7367675677, +91 9652138888</span>
                 <div className="social-links-footer">
                     <a href="https://www.linkedin.com/in/b-subramanyam" className="anchor">
                         <img src={linkedin} alt="" className="social-link-footer"/>
