@@ -154,7 +154,7 @@
     .form{
         display: flex;
         flex-direction: row;
-        width: 550px;
+        width: 510px;
         flex-wrap: wrap;
     }
     .footer_right{
@@ -182,7 +182,7 @@
     .input-name, .input-email{
         border-radius: 10px;
         height: 25px;
-        width: 220px;
+        width: 198px;
         /* width: 302px; */
         border: none;
         /* padding:10px; */

@@ -26,7 +26,7 @@ export const Footbar = ({mode}) => {
                     </a>
                     <a href="https://www.twitter.com/subbu2339" className="anchor">
                         <img src={twitter} alt="" className="social-link-footer"/>
-                    </a> 
+                    </a>  
                     <a href="mailto:karri.balu2339@gmail.com" className="anchor">
                         <img src={mail} alt="" className="social-link-footer"/>
                     </a>
