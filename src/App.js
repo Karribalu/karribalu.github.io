@@ -94,11 +94,13 @@ function App() {
     <div className='app'>
       <div className={isLightBackground ? 'light-bg' : 'dark-bg'}>
         <div className={hamActive ? 'blur' : ''}>
-          {/* <NavBar
+          <NavBar
             mode={isLightBackground}
             onToggle={handleToggle}
             hamActive={hamActive}
             setHamActive={setHamActive}
+            skillsDiv={skillsDiv}
+            setSkillsDiv={setSkillsDiv}
           />
           <Main mode={isLightBackground} />
           <AboutMe mode={isLightBackground} />
@@ -106,13 +108,15 @@ function App() {
           {!isMobile && <Skills mode={isLightBackground} />}
           {!isMobile && <Experience mode={isLightBackground} />}
           {!isMobile && <Projects mode={isLightBackground} />}
-          <Footbar mode={isLightBackground} /> */}
-          <MobileSkills
-            mode={isLightBackground}
-            skills={skills}
-            skillsDiv={skillsDiv}
-            setSkillsDiv={setSkillsDiv}
-          />
+          <Footbar mode={isLightBackground} />
+          {skillsDiv && (
+            <MobileSkills
+              mode={isLightBackground}
+              skills={skills}
+              skillsDiv={skillsDiv}
+              setSkillsDiv={setSkillsDiv}
+            />
+          )}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './MobileSkills.css';
 import { SectionHeadingLight } from '../SectionHeading/SectionHeading';
 import { SectionHeadingDark } from '../SectionHeading/SectionHeadingDark';
@@ -6,8 +6,13 @@ import { Footbar } from '../Footbar/Footbar';
 import { RxCross1} from "react-icons/rx";
 
 export const MobileSkills = ({mode,skills,skillsDiv,setSkillsDiv}) => {
+
+    const [skillsDivName,setSkillsDivName] = useState("mobile-skills");
+    useEffect(()=>{
+        skillsDivName === "mobile-skills" ? setSkillsDivName("mobile-skills-active") : setSkillsDivName("mobile-skills");
+    },[skillsDiv]);
   return(
-    <div className="mobile-skills">
+    <div className={skillsDivName}>
         <div className="mobile-skills-head">
             {mode ? <SectionHeadingDark name="Skills"/> : <SectionHeadingLight name="Skills"/>}
             <RxCross1 className="cross-mobile" onClick={()=>setSkillsDiv(!skillsDiv)}/>
