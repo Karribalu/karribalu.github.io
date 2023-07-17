@@ -4,10 +4,15 @@ import logo from "../../assets/logo-white.svg"
 import {toggleDarkButton, toggleLightButton, logoColor} from "../../icons";
 import {RxHamburgerMenu, RxCross1} from "react-icons/rx";
 import "./NavBar.css"
-const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
+const NavBar = (props) => {
+    const {mode,onToggle, hamActive, setHamActive, skillsDiv, setSkillsDiv} = props;
     const scrollToTop = () => {
         scroll.scrollToTop();
         };
+    const skillsClickActive = () => {
+        setSkillsDiv(!skillsDiv);
+        setHamActive(!hamActive);
+    }
     return (
     <div className="navbar">
         <nav className={!mode ? "navbar-light": "navbar-dark"}>
@@ -77,8 +82,8 @@ const NavBar = ({mode,onToggle, hamActive, setHamActive}) => {
             </div>
             <div className={mode? "nav-line-light" : "nav-line-dark"}></div>
             <div className="sidebar-links">
-            <Link to="Career" className="nav-link">Career</Link>
-            <Link to="skills" className="nav-link">Skills</Link>
+            <Link to="Career" className="nav-link" >Career</Link>
+            <Link to="skills" className="nav-link" onClick={skillsClickActive}>Skills</Link>
             <Link to="experience" className="nav-link">Experience</Link>
             <Link to="projects" className="nav-link">Projects</Link>
             <Link to="contact" className="nav-link">Contact</Link>

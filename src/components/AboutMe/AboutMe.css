@@ -25,6 +25,7 @@
     .about-me {
         align-items: center;
         justify-content: center;
+        margin-bottom: 250px;
     }
     
     .about-me-content{
@@ -47,6 +48,7 @@
     .about-me{
         align-items: center;
         justify-content: center;
+        
     }
     .about-me-content {
             margin: 10% 0% 0 8%;

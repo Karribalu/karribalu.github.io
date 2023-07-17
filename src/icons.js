@@ -34,6 +34,12 @@ import solidity from './assets/skills-icons/solidity.svg';
 import html from './assets/skills-icons/html.svg';
 import projectGroup from './assets/project-group.svg';
 import css from './assets/skills-icons/css.svg';
+import web3 from './assets/skills-icons/web3.svg';
+import git from './assets/skills-icons/git.svg';
+import sql from './assets/skills-icons/sql.svg';
+import numpy from './assets/skills-icons/numpy.svg';
+import dsa from './assets/skills-icons/dsa.svg';
+import mongo from './assets/skills-icons/mongo.svg';
 export {
   toggleDarkButton,
   toggleLightButton,
@@ -71,4 +77,10 @@ export {
   html,
   projectGroup,
   css,
+  web3,
+  git,
+  sql,
+  numpy,
+  dsa,
+  mongo,
 };
