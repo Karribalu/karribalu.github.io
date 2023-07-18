@@ -60,3 +60,29 @@
 }
 
 }
+
+@media screen and (max-width: 767px) {
+.education, .education-light{
+    width: 250px;
+    height: 300px;
+    }
+    .education-logo{
+    width: 100px;
+    margin: 10% 0 0 30%;   
+    }
+    .education-text{
+    font-size: 16px;
+    }
+    .education-list-item{
+        margin-top:10px;
+    }
+
+    .education-list-item-title{
+    font-size: 12px;
+}
+.education-list-item-text {
+    margin-top: -10px;
+    font-size: 10px;
+    font-weight: 500;
+}
+}

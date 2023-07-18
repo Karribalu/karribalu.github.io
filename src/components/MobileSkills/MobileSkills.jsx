@@ -12,10 +12,10 @@ export const MobileSkills = ({mode,skills,skillsDiv,setSkillsDiv}) => {
         skillsDivName === "mobile-skills" ? setSkillsDivName("mobile-skills-active") : setSkillsDivName("mobile-skills");
     },[skillsDiv]);
   return(
-    <div className={skillsDivName}>
+    <div className={mode ? skillsDivName+"-dark" : skillsDivName}>
         <div className="mobile-skills-head">
             {mode ? <SectionHeadingDark name="Skills"/> : <SectionHeadingLight name="Skills"/>}
-            <RxCross1 className="cross-mobile" onClick={()=>setSkillsDiv(!skillsDiv)}/>
+            <RxCross1 className={mode ?"cross-mobile-dark":"cross-mobile"} onClick={()=>setSkillsDiv(!skillsDiv)}/>
         </div> 
         <div className="mobile-skills-container">
             {skills.map((skill) => (
