@@ -1,11 +1,15 @@
 import { Link, animateScroll as scroll } from "react-scroll";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import logo from "../../assets/logo-white.svg"
 import {toggleDarkButton, toggleLightButton, logoColor} from "../../icons";
 import {RxHamburgerMenu, RxCross1} from "react-icons/rx";
 import "./NavBar.css"
 const NavBar = (props) => {
-    const {mode,onToggle, hamActive, setHamActive, skillsDiv, setSkillsDiv, careerDiv, setCareerDiv} = props;
+    const {mode,onToggle, hamActive, setHamActive, skillsDiv, setSkillsDiv, careerDiv, setCareerDiv,experienceDiv, setExperienceDiv} = props;
+    const [siderBarDivName, setSideBarDivName] = useState("sidebar");
+    useEffect(()=>{
+        siderBarDivName === "sidebar" ? setSideBarDivName("sidebar-active") : setSideBarDivName("sidebar");
+    },[hamActive]);
     const scrollToTop = () => {
         scroll.scrollToTop();
         };
@@ -15,6 +19,10 @@ const NavBar = (props) => {
     }
     const careerClickActive = () => {
         setCareerDiv(!careerDiv);
+        setHamActive(!hamActive);
+    }
+    const experienceClickActive = () => {
+        setExperienceDiv(!experienceDiv);
         setHamActive(!hamActive);
     }
     return (
@@ -88,7 +96,7 @@ const NavBar = (props) => {
             <div className="sidebar-links">
             <Link to="Career" className="nav-link" onClick={careerClickActive}>Career</Link>
             <Link to="skills" className="nav-link" onClick={skillsClickActive}>Skills</Link>
-            <Link to="experience" className="nav-link">Experience</Link>
+            <Link to="experience" className="nav-link" onClick={experienceClickActive}>Experience</Link>
             <Link to="projects" className="nav-link">Projects</Link>
             <Link to="contact" className="nav-link">Contact</Link>
              </div>

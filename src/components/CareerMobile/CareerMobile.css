@@ -35,6 +35,7 @@
     background: linear-gradient(90deg, #eecbf0 3.07%, #eeccef 6.85%, #e8b2e9 35.59%, #f1cfe6 99.28%);
 }
 .mobile-career-head {
+    margin-top:10px;
     margin-left: -75px;
     /* align-items: center; */
     display: flex;

@@ -19,7 +19,7 @@ export const CareerMobile = (props) => {
     <div className={mode ? careerDivName + "-dark" : careerDivName}>
 
         <div className="mobile-career-head">
-            {mode ? <SectionHeadingDark name="Skills"/> : <SectionHeadingLight name="Skills"/>}
+            {mode ? <SectionHeadingDark name="Career"/> : <SectionHeadingLight name="Career"/>}
             <RxCross1 className={mode ?"cross-mobile-dark" :"cross-mobile"} onClick={()=>setCareerDiv(!careerDiv)}/>
         </div> 
         <div className="career-boxes">

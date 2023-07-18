@@ -1,9 +1,9 @@
-.mobile-skills{
+.mobile-experience {
     /* padding-left: 5%;
     padding-top: 5%; */
     position: fixed;
     top: 0;
-    width:100%;
+    width: 100%;
     background-color: #c53b97;
     background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 99.28%);
     transform: translateX(-100%);
@@ -11,89 +11,68 @@
     overflow-y: scroll;
 }
 
-.mobile-skills-active {
+.mobile-experience-active {
     transform: translateX(0%);
     transition: all 0.5s ease-in-out;
-    /* padding-left: 5%;
-    padding-top: 4.5%; */
     position: fixed;
     top: 0;
     height: calc(100% - 0px);
     overflow-y: auto;
     width: 100%;
     z-index: 99999999;
-    /* height: 90%; */
-    background-color: #c53b97;
     background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 99.28%);
 }
 
-.mobile-skills-active-dark {
+.mobile-experience-active-dark {
     transform: translateX(0%);
     transition: all 0.5s ease-in-out;
-    /* padding-left: 5%;
-    padding-top: 4.5%; */
     position: fixed;
     top: 0;
     height: calc(100% - 0px);
     overflow-y: auto;
     width: 100%;
     z-index: 99999999;
-    /* height: 90%; */
+    background-color: #E4D6EE;
     background: linear-gradient(90deg, #eecbf0 3.07%, #eeccef 6.85%, #e8b2e9 35.59%, #f1cfe6 99.28%);
 }
 
-.mobile-skills-head{
+.mobile-experience-head {
     margin-top: 10px;
-    margin-left:-75px;
+    margin-left: -75px;
     /* align-items: center; */
     display: flex;
     gap: 70px;
 }
 
-.mobile-skills-container{
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    row-gap:20px;
-    margin-top:40px;
-    margin-left: 40px;
-}
-.mobile-skills-div{
-    background-color: #7E3176;
-    padding: 10px 5px 5px 5px;
-    width: 60px;
-    border-radius: 10px;
-    /* opacity: 0.8; */
-    border: 1px solid #BC41AE;
-}
-.mobile-skills-icon{
-    height: 40px;
-    width:60px;
-}
-.cross-mobile{
-    margin-left: 25%;
+
+.cross-mobile-exp {
+    margin-left: 8%;
     margin-top: 50px;
     font-size: 30px;
-    color:white;
+    color: white;
     cursor: pointer;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .mobile-skills-icon{
-    height: 50px;
-    width:70px;
-    }
-    .mobile-skills-div{
-    padding: 10px 5px 5px 5px;
-    width: 70px;
+.cross-mobile-exp-dark {
+    margin-left: 25%;
+    margin-top: 50px;
+    font-size: 30px;
+    color: #c53b97;
+    cursor: pointer;
 }
-.mobile-skills-container {
-    margin-left: 150px;
-}
-    .mobile-skills-head{
-    margin-left:20px;
-    /* align-items: center; */
+.mobile-experience-container{
     display: flex;
-    gap: 70px;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    margin-top:30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .mobile-experience-head {
+        margin-left: 20px;
+        /* align-items: center; */
+        display: flex;
+        gap: 70px;
     }
- 
 }
