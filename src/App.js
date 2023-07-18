@@ -9,6 +9,7 @@ import { Experience } from './components/Experience/Experience';
 import { Projects } from './components/Projects/Projects';
 import { MobileSkills } from './components/MobileSkills/MobileSkills';
 import { Footbar } from './components/Footbar/Footbar';
+import { CareerMobile } from './components/CareerMobile/CareerMobile';
 import {
   web3,
   react,
@@ -44,23 +45,7 @@ function App() {
   const [isMobile, setIsMobile] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   const [skillsDiv, setSkillsDiv] = useState(false);
-  useEffect(() => {
-    setWidth(window.innerWidth);
-    if (width < 768) {
-      setIsMobile(true);
-    } else {
-      setIsMobile(false);
-    }
-    console.log(width);
-  }, []);
-
-  const [hamActive, setHamActive] = useState(false);
-
-  const handleToggle = () => {
-    console.log('toggle');
-    setIsLightBackground(!isLightBackground);
-  };
-
+  const [careerDiv, setCareerDiv] = useState(false);
   const skills = [
     [web3, 'Web3'],
     [react, 'React'],
@@ -90,6 +75,23 @@ function App() {
     [datascience, 'Data Science'],
     [mongo, 'MongoDB'],
   ];
+  useEffect(() => {
+    setWidth(window.innerWidth);
+    if (width < 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+    console.log(width);
+  }, []);
+
+  const [hamActive, setHamActive] = useState(false);
+
+  const handleToggle = () => {
+    console.log('toggle');
+    setIsLightBackground(!isLightBackground);
+  };
+
   return (
     <div className='app'>
       <div className={isLightBackground ? 'light-bg' : 'dark-bg'}>
@@ -101,6 +103,8 @@ function App() {
             setHamActive={setHamActive}
             skillsDiv={skillsDiv}
             setSkillsDiv={setSkillsDiv}
+            careerDiv={careerDiv}
+            setCareerDiv={setCareerDiv}
           />
           <Main mode={isLightBackground} />
           <AboutMe mode={isLightBackground} />
@@ -115,6 +119,13 @@ function App() {
               skills={skills}
               skillsDiv={skillsDiv}
               setSkillsDiv={setSkillsDiv}
+            />
+          )}
+          {careerDiv && (
+            <CareerMobile
+              mode={isLightBackground}
+              careerDiv={careerDiv}
+              setCareerDiv={setCareerDiv}
             />
           )}
         </div>
