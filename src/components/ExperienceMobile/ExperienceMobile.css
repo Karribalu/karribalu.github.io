@@ -1,4 +1,4 @@
-.mobile-career {
+.mobile-experience {
     /* padding-left: 5%;
     padding-top: 5%; */
     position: fixed;
@@ -10,7 +10,7 @@
     transition: all 0.5s ease-in-out;
     overflow-y: scroll;
 }
-.mobile-career-dark {
+.mobile-experience-dark {
     /* padding-left: 5%;
     padding-top: 5%; */
     position: fixed;
@@ -22,7 +22,8 @@
     transition: all 0.5s ease-in-out;
     overflow-y: scroll;
 }
-.mobile-career-active {
+
+.mobile-experience-active {
     transform: translateX(0%);
     transition: all 0.5s ease-in-out;
     position: fixed;
@@ -33,7 +34,8 @@
     z-index: 99999999;
     background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 99.28%);
 }
-.mobile-career-active-dark {
+
+.mobile-experience-active-dark {
     transform: translateX(0%);
     transition: all 0.5s ease-in-out;
     position: fixed;
@@ -45,8 +47,9 @@
     background-color: #E4D6EE;
     background: linear-gradient(90deg, #eecbf0 3.07%, #eeccef 6.85%, #e8b2e9 35.59%, #f1cfe6 99.28%);
 }
-.mobile-career-head {
-    margin-top:10px;
+
+.mobile-experience-head {
+    margin-top: 10px;
     margin-left: -75px;
     /* align-items: center; */
     display: flex;
@@ -54,46 +57,35 @@
 }
 
 
-.cross-mobile {
-    margin-left: 25%;
+.cross-mobile-exp {
+    margin-left: 8%;
     margin-top: 50px;
     font-size: 30px;
     color: white;
     cursor: pointer;
 }
-.cross-mobile-dark {
-    margin-left: 25%;
+
+.cross-mobile-exp-dark {
+    margin-left: 8%;
     margin-top: 50px;
     font-size: 30px;
+    font-weight: 800;
     color: #c53b97;
     cursor: pointer;
 }
+.mobile-experience-container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;
+    margin-top:30px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .mobile-career-head {
+    .mobile-experience-head {
         margin-left: 20px;
         /* align-items: center; */
         display: flex;
         gap: 70px;
-    }
-
-    .career-boxes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        margin: 5% 0 0 34%;
-    }
-
-}
-
-@media screen and (max-width: 767px) {
-
-    .career-boxes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        margin: 10% 0 0 22%;
     }
 }

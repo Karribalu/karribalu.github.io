@@ -87,7 +87,7 @@
     top: 0;
     flex-direction: column;
     width: 220px;
-    height: 500px;
+    height: 400px;
     background-color: #c53b97;
     align-content: center;
     gap: 30px;
@@ -111,7 +111,7 @@
     top: 0;
     flex-direction: column;
     width: 220px;
-    height: 500px;
+    height: 400px;
     background-color: #c53b97;
     align-content: center;
     gap: 30px;
@@ -121,6 +121,27 @@
     line-height: normal;
     border-radius: 0px 0px 20px 0px;
     background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 99.28%);
+}
+.sidebar-active-dark {
+    transform: translateX(0%);
+    transition: all 0.5s ease-in-out;
+    padding-left: 5%;
+    padding-top: 4.5%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    flex-direction: column;
+    width: 220px;
+    height: 400px;
+    background-color: #c53b97;
+    align-content: center;
+    gap: 30px;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 0px 0px 20px 0px;
+    background: linear-gradient(90deg, #eecbf0 3.07%, #eeccef 6.85%, #e8b2e9 35.59%, #f1cfe6 99.28%);
 }
 
 
@@ -148,10 +169,12 @@
         .logo {
             height: 50px;
             padding-top: 10px;
+            padding-left:20px;
         }
     
         .toggle {
             height: 20px;
+            
         }
     
         .hamburger {
@@ -168,6 +191,7 @@
 
     .logo{
         height: 70px;
+        padding-left: 20px;
     }
     .toggle{
         height: 25px;

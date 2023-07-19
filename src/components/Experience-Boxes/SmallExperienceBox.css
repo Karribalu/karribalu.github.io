@@ -45,7 +45,7 @@
     background-color: #521587;
     height: 50px;
     padding: 3px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
     /* opacity: 0.7; */
 }
@@ -53,7 +53,7 @@
 .skill_image {
     align-items: center;
     height: 35px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .smallExperience_body {
@@ -67,4 +67,113 @@
 .smallExperience_body_description_container {
     display: flex;
     gap: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+.smallExperienceLight {
+
+        width: 400px;
+        /* min-height: 630px; */
+        padding: 0px 20px 5px 20px;
+    }
+
+    .smallExperienceDark {
+        width: 400px;
+        /* min-height: 630px; */
+        padding: 0px 20px 5px 20px;
+    }
+
+    .smallExperience_head_left h2 {
+        font-size: 25px;
+        font-weight: 800;
+
+    }
+
+    .smallExperience_head_right {
+        gap: 15px;
+    }
+
+    .smallExperience_head_left_company {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .smallExperience_head_right_technology {
+        height: 45px;
+        padding: 0px;
+        border-radius: 10px;
+        text-align: center;
+        /* opacity: 0.7; */
+    }
+
+    .skill_image {
+        height: 30px;
+    }
+
+    .smallExperience_body {
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+
+    .smallExperience_body_description_container {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .smallExperienceLight {
+    
+            width: 350px;
+            /* min-height: 630px; */
+            padding: 0px 20px 5px 20px;
+        }
+    
+        .smallExperienceDark {
+            width: 350px;
+            /* min-height: 630px; */
+            padding: 0px 20px 5px 20px;
+        }
+        .smallExperience_head_left h2{
+            font-size: 25px;
+            font-weight: 800;
+
+        }
+    
+        .smallExperience_head_right {
+            gap: 13px;
+        }
+        .smallExperience_head_left_company{
+            font-size:15px;
+            line-height: 25px;
+        }
+    
+        .smallExperience_head_right_technology {
+            height: 45px;
+            padding: 0px;
+            border-radius: 10px;
+            text-align: center;
+            /* opacity: 0.7; */
+        }
+    
+        .skill_image {
+            height: 30px;
+        }
+    
+        .smallExperience_body {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            margin-top: 20px;
+        }
+    
+        .smallExperience_body_description_container {
+            display: flex;
+            gap: 10px;
+        }
+    
 }

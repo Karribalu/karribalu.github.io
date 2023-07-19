@@ -1,12 +1,21 @@
 import React from 'react'
 import { SectionHeadingLight } from '../SectionHeading/SectionHeading';
 import { SectionHeadingDark } from '../SectionHeading/SectionHeadingDark';
-import { LargeExperienceBox } from '../Experience-Boxes/LargeExperienceBox';
-import './Experience.css';
-import {java, spring, aws,ts, Jenkins, Terraform, Docker, Kubernetes, Ansible, python, sklearn, dataanalytics, datascience, clustering, flask} from "../../icons";
+import { RxCross1} from "react-icons/rx";
+import { useState, useEffect } from 'react';
+import {java, spring, aws,ts, Jenkins, Terraform, Docker,js, Kubernetes, Ansible, python, sklearn, dataanalytics, datascience, clustering, flask, react} from "../../icons";
+import './ExperienceMobile.css';
 import { SmallExperienceBox } from '../Experience-Boxes/SmallExperienceBox';
-export const Experience = ({mode}) => {
-  const job1 = {
+import { Footbar } from '../Footbar/Footbar';
+
+export const ExperienceMobile = (props) => {
+    const {mode, experienceDiv, setExperienceDiv} = props;
+    const [experienceDivName,setExperienceDivName] = useState("mobile-experience");
+    useEffect(()=>{
+        experienceDivName === "mobile-experience" ? setExperienceDivName("mobile-experience-active") : setExperienceDivName("mobile-experience");
+    },[experienceDiv]);
+
+    const job1 = {
         title: 'Software Engineer',
         company: 'JPMC',
         location: 'Glasgow, UK',
@@ -22,7 +31,8 @@ export const Experience = ({mode}) => {
             [java, "Java"],
             [spring, "Spring"],
             [aws, "AWS"],
-            [ts, "TypeScript"]
+            [js, "JavaScript"],
+            [react, "React"],
         ]
     }
   const job2 = {
@@ -67,24 +77,19 @@ export const Experience = ({mode}) => {
         ]
 
     }
+
   return(
-    <div className='experience'>
-      <div className='experience-heading'>
-         {!mode ? (
-            <SectionHeadingLight name='Experience' />
-        ) : (
-          <SectionHeadingDark name='Experience' />
-        )}
+    <div className={mode ? experienceDivName +"-dark" : experienceDivName}>
+        <div className="mobile-experience-head">
+            {mode ? <SectionHeadingDark name="Experience"/> : <SectionHeadingLight name="Experience"/>}
+            <RxCross1 className={mode ?"cross-mobile-exp-dark" :"cross-mobile-exp"} onClick={()=>setExperienceDiv(!experienceDiv)}/>
         </div>
-        <div className='experience-container'>
-            <div className='one'>
-            <LargeExperienceBox mode = {mode} job ={job1} className="one"/>
-            </div>
-            <div className='two'>
+        <div className="mobile-experience-container">
+            <SmallExperienceBox mode = {mode} job ={job1} className="one"/>
             <SmallExperienceBox mode = {mode} job ={job2} className="two"/>
             <SmallExperienceBox mode = {mode} job ={job3} className="three"/>
-            </div>
         </div>
+        <Footbar mode={mode}/>
     </div>
    )
   }
