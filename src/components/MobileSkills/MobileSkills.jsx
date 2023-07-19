@@ -10,6 +10,7 @@ export const MobileSkills = ({mode,skills,skillsDiv,setSkillsDiv}) => {
     const [skillsDivName,setSkillsDivName] = useState("mobile-skills");
     useEffect(()=>{
         skillsDivName === "mobile-skills" ? setSkillsDivName("mobile-skills-active") : setSkillsDivName("mobile-skills");
+        console.log(skillsDivName)
     },[skillsDiv]);
   return(
     <div className={mode ? skillsDivName+"-dark" : skillsDivName}>
