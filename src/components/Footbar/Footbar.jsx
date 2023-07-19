@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Footbar.css';
 import {linkedin, github, twitter, mail} from "../../icons";
 import { useForm, ValidationError } from '@formspree/react';
@@ -6,9 +6,10 @@ import { useState } from 'react';
 export const Footbar = ({mode}) => {
     const [state, handleSubmit] = useForm("xpzgznoq");
     const [status, setStatus] = useState("");
-    if (state.succeeded) {
-        setStatus("SUCCESS");
-    }
+    useEffect(()=>{
+        setStatus(state.succeeded ? "SUCCESS": "FAILED");
+        
+    },[state]);
   return(
     
     <div className='footer'>
@@ -62,7 +63,8 @@ export const Footbar = ({mode}) => {
                         errors={state.errors}
                     />
                     </div>
-                    <button type="submit" className='submit-btn' disabled={state.submitting}>Send</button>
+                    {status === "SUCCESS" ? <p className='result'>Thanks!</p> : <button type="submit" className='submit-btn' disabled={state.submitting}>Send</button>}
+                    {/* <button type="submit" className='submit-btn' disabled={state.submitting}>Send</button> */}
                 </form>
             </div> 
         </div>

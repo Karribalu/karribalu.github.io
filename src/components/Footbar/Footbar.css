@@ -193,9 +193,16 @@
         /* padding: 10px; */
         font-size: 20px;
         width: 90%;
+        font-family: 'Montserrat',
+            sans-serif;
     }
     .submit-btn{
         margin-left: 28%;
+    }
+    .result{
+        margin-left: 28%;
+        font-size: large;
+        color: #55137C;
     }
 }
 
