@@ -10,6 +10,18 @@
     transition: all 0.5s ease-in-out;
     overflow-y: scroll;
 }
+.mobile-experience-dark {
+    /* padding-left: 5%;
+    padding-top: 5%; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #c53b97;
+    background: linear-gradient(90deg, #491696 3.07%, #4A1699 6.85%, #54137E 35.59%, #610844 99.28%);
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
 
 .mobile-experience-active {
     transform: translateX(0%);
@@ -54,9 +66,10 @@
 }
 
 .cross-mobile-exp-dark {
-    margin-left: 25%;
+    margin-left: 8%;
     margin-top: 50px;
     font-size: 30px;
+    font-weight: 800;
     color: #c53b97;
     cursor: pointer;
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { github } from '../../icons'
 import './SingleProject.css';
 import {BsGlobe, BsGithub} from 'react-icons/bs';
 export const SingleProject = ({mode, project}) => {

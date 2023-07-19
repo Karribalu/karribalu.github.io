@@ -11,6 +11,7 @@ import { MobileSkills } from './components/MobileSkills/MobileSkills';
 import { Footbar } from './components/Footbar/Footbar';
 import { CareerMobile } from './components/CareerMobile/CareerMobile';
 import { ExperienceMobile } from './components/ExperienceMobile/ExperienceMobile';
+import { ProjectsMobile } from './components/ProjectsMobile/ProjectsMobile';
 import {
   web3,
   react,
@@ -48,6 +49,7 @@ function App() {
   const [skillsDiv, setSkillsDiv] = useState(false);
   const [careerDiv, setCareerDiv] = useState(false);
   const [experienceDiv, setExperienceDiv] = useState(false);
+  const [projectsDiv, setProjectsDiv] = useState(false);
   const skills = [
     [web3, 'Web3'],
     [react, 'React'],
@@ -79,7 +81,7 @@ function App() {
   ];
   useEffect(() => {
     setWidth(window.innerWidth);
-    if (width < 768) {
+    if (width < 1024) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
@@ -109,6 +111,8 @@ function App() {
             setCareerDiv={setCareerDiv}
             experienceDiv={experienceDiv}
             setExperienceDiv={setExperienceDiv}
+            projectsDiv={projectsDiv}
+            setProjectsDiv={setProjectsDiv}
           />
           <Main mode={isLightBackground} />
           <AboutMe mode={isLightBackground} />
@@ -137,6 +141,14 @@ function App() {
               mode={isLightBackground}
               experienceDiv={experienceDiv}
               setExperienceDiv={setExperienceDiv}
+            />
+          )}
+
+          {projectsDiv && (
+            <ProjectsMobile
+              mode={isLightBackground}
+              projectsDiv={projectsDiv}
+              setProjectsDiv={setProjectsDiv}
             />
           )}
         </div>

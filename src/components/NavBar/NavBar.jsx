@@ -5,7 +5,7 @@ import {toggleDarkButton, toggleLightButton, logoColor} from "../../icons";
 import {RxHamburgerMenu, RxCross1} from "react-icons/rx";
 import "./NavBar.css"
 const NavBar = (props) => {
-    const {mode,onToggle, hamActive, setHamActive, skillsDiv, setSkillsDiv, careerDiv, setCareerDiv,experienceDiv, setExperienceDiv} = props;
+    const {mode,onToggle, hamActive, setHamActive, skillsDiv, setSkillsDiv, careerDiv, setCareerDiv,experienceDiv, setExperienceDiv, projectsDiv, setProjectsDiv} = props;
     const [siderBarDivName, setSideBarDivName] = useState("sidebar");
     useEffect(()=>{
         siderBarDivName === "sidebar" ? setSideBarDivName("sidebar-active") : setSideBarDivName("sidebar");
@@ -23,6 +23,10 @@ const NavBar = (props) => {
     }
     const experienceClickActive = () => {
         setExperienceDiv(!experienceDiv);
+        setHamActive(!hamActive);
+    }
+    const projectsClickActive = () => {
+        setProjectsDiv(!projectsDiv);
         setHamActive(!hamActive);
     }
     return (
@@ -97,8 +101,7 @@ const NavBar = (props) => {
             <Link to="Career" className="nav-link" onClick={careerClickActive}>Career</Link>
             <Link to="skills" className="nav-link" onClick={skillsClickActive}>Skills</Link>
             <Link to="experience" className="nav-link" onClick={experienceClickActive}>Experience</Link>
-            <Link to="projects" className="nav-link">Projects</Link>
-            <Link to="contact" className="nav-link">Contact</Link>
+            <Link to="projects" className="nav-link" onClick={projectsClickActive}>Projects</Link>
              </div>
         </div>
 

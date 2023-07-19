@@ -3,7 +3,7 @@ import { SectionHeadingLight } from '../SectionHeading/SectionHeading';
 import { SectionHeadingDark } from '../SectionHeading/SectionHeadingDark';
 import { RxCross1} from "react-icons/rx";
 import { useState, useEffect } from 'react';
-import {java, spring, aws,ts, Jenkins, Terraform, Docker, Kubernetes, Ansible, python, sklearn, dataanalytics, datascience, clustering, flask} from "../../icons";
+import {java, spring, aws,ts, Jenkins, Terraform, Docker,js, Kubernetes, Ansible, python, sklearn, dataanalytics, datascience, clustering, flask, react} from "../../icons";
 import './ExperienceMobile.css';
 import { SmallExperienceBox } from '../Experience-Boxes/SmallExperienceBox';
 import { Footbar } from '../Footbar/Footbar';
@@ -31,7 +31,8 @@ export const ExperienceMobile = (props) => {
             [java, "Java"],
             [spring, "Spring"],
             [aws, "AWS"],
-            [ts, "TypeScript"]
+            [js, "JavaScript"],
+            [react, "React"],
         ]
     }
   const job2 = {
