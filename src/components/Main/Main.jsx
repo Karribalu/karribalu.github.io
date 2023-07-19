@@ -4,6 +4,8 @@ import {linkedinLight, githubLight, twitterLight, mailLight} from "../../icons";
 import "./Main.css";
 import { heroImage } from "../../icons";
 import heroImageLight from "../../assets/hero-image-fixed-light.svg";
+import { saveAs } from "file-saver";
+import resume from "../../assets/Bala_Subramanyam_Resume.pdf";
 const Main = ({mode}) =>{ 
 
     const socialDarkStyle = {
@@ -13,6 +15,9 @@ const Main = ({mode}) =>{
             fontSize:"40px"
         }
     }
+    const resumeDownload = () => {
+        saveAs(resume, "Balasubramanyam-Resume.pdf");
+    }
     return(
         <div>
             <div className="main">
@@ -21,6 +26,7 @@ const Main = ({mode}) =>{
                     <span className="span-hello">Hello!!</span>
                     <span className="span-name">I'm Bala Subramanyam</span>
                     <span className="span-description">Passionate full stack developer experienced in React, Java spring boot and exploring Web3 Space actively and currently working in JPMC, Glasgow</span>
+                    <button className="resume-btn" onClick = {resumeDownload}>Resume</button>
                     <div className={mode? "social-links-light" : "social-links-dark"}>
                        <a href="https://www.linkedin.com/in/b-subramanyam" className="anchor">
                             {
@@ -50,6 +56,7 @@ const Main = ({mode}) =>{
                             }
                         </a>
                     </div>
+                    
                 </div>
                 {!mode?
                 <img src={heroImage} alt="" className="main-right"/>
