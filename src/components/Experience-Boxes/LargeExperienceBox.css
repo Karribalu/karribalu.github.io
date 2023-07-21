@@ -1,6 +1,6 @@
 .largeExperienceDark{
     width: 1200px;
-    height: 700px;
+
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: linear-gradient(132deg, rgba(255, 255, 255, 0.60) 1.56%, rgba(255, 255, 255, 0.20) 97.67%);
@@ -11,7 +11,7 @@
 
 .largeExperienceLight{
     width: 1200px;
-    height: 700px;
+
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: linear-gradient(#AE46FF, #D22FBA);
@@ -44,12 +44,12 @@
     padding: 3px;
     border-radius: 10px;
     text-align: center;
+    border: 1px solid #BC41AE;
     /* opacity: 0.7; */
 }
 .skill_image{
     align-items: center;
     height: 35px;
-    border-radius: 10px;
     margin: 8px;
 }
 

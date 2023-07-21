@@ -38,7 +38,7 @@
     left: 170px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 800px) and (max-width: 1023px) {
     /* .trolly-man{
         /* width: 100%; 
         height: 60%;
