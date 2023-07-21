@@ -21,9 +21,10 @@ export const ExperienceMobile = (props) => {
         location: 'Glasgow, UK',
         date: 'Feb 2023 - Present',
         description: [
-            'Developed and maintained Java Spring Boot applications, contributing to high-quality code and scalable solutions.',
             'Implemented an innovative key store integration, bolstering application security and reducing vulnerabilities.',
             'Developed comprehensive unit tests, increasing test coverage by 8% and improving code reliability.',
+            'Worked on migrating the database from MarkLogic to MongoDB and successfully migrated the data with zero downtime.',
+            'Redisigned and developed the complete UI of the application using ReactJS',
             'Successfully integrated an external document creation tool using AWS Lambda and designed APIs for seamless integration.',
             'Strengthened key management practices, ensuring the confidentiality and integrity of sensitive information.'
         ],
