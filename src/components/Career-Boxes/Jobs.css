@@ -36,7 +36,7 @@
     text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 800px) and (max-width: 1023px) {
 
 .jobs,.jobs-light {
         width: 300px;
@@ -58,7 +58,7 @@
 }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 799px) {
     .jobs,
         .jobs-light {
             width: 250px;

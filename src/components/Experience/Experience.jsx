@@ -3,7 +3,7 @@ import { SectionHeadingLight } from '../SectionHeading/SectionHeading';
 import { SectionHeadingDark } from '../SectionHeading/SectionHeadingDark';
 import { LargeExperienceBox } from '../Experience-Boxes/LargeExperienceBox';
 import './Experience.css';
-import {java, spring, aws,ts, Jenkins, Terraform, Docker, Kubernetes, Ansible, python, sklearn, dataanalytics, datascience, clustering, flask} from "../../icons";
+import {java, spring, aws,ts, Jenkins, Terraform, Docker, Kubernetes, Ansible, python, sklearn, dataanalytics, datascience, clustering, flask, react,js} from "../../icons";
 import { SmallExperienceBox } from '../Experience-Boxes/SmallExperienceBox';
 export const Experience = ({mode}) => {
   const job1 = {
@@ -12,9 +12,10 @@ export const Experience = ({mode}) => {
         location: 'Glasgow, UK',
         date: 'Feb 2023 - Present',
         description: [
-            'Developed and maintained Java Spring Boot applications, contributing to high-quality code and scalable solutions.',
             'Implemented an innovative key store integration, bolstering application security and reducing vulnerabilities.',
             'Developed comprehensive unit tests, increasing test coverage by 8% and improving code reliability.',
+            'Worked on migrating the database from MarkLogic to MongoDB and successfully migrated the data with zero downtime.',
+            'Redisigned and developed the complete UI of the application using ReactJS',
             'Successfully integrated an external document creation tool using AWS Lambda and designed APIs for seamless integration.',
             'Strengthened key management practices, ensuring the confidentiality and integrity of sensitive information.'
         ],
@@ -22,7 +23,8 @@ export const Experience = ({mode}) => {
             [java, "Java"],
             [spring, "Spring"],
             [aws, "AWS"],
-            [ts, "TypeScript"]
+            [js, "JavaScript"],
+            [react, "React"],
         ]
     }
   const job2 = {
