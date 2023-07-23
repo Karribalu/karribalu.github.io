@@ -161,7 +161,7 @@
 .cross:hover {
     font-size: larger;
 }
-@media(max-width:767px) {
+@media(max-width:799px) {
         .nav-links {
             display: none;
         }
