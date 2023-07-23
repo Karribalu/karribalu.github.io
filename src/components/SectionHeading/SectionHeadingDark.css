@@ -16,7 +16,7 @@
     font-weight: 1000px;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
     .section-heading-dark {
         margin-left: 35%;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 768px) {
     .section-heading-dark {
         margin-left: 20%;
     }

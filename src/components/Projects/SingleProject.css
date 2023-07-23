@@ -67,7 +67,7 @@
     margin-left: 15px;
 }
 
-@media screen and (max-width: 799px){
+@media screen and (max-width: 768px){
     .singleProjectLight {
             width: 300px;
             height: fit-content;
