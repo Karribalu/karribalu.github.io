@@ -87,7 +87,7 @@ function App() {
       setIsMobile(false);
     }
     console.log(width);
-  }, [width]);
+  }, []);
 
   const [hamActive, setHamActive] = useState(false);
 

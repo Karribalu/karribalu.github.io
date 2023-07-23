@@ -116,7 +116,7 @@
     color:#55137C;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1023px) {
+@media screen and (min-width: 769px) and (max-width: 1023px) {
     .footer_dark, .footer_light{
         display: flex;
         flex-direction: column;
@@ -207,7 +207,7 @@
 }
 
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 768px) {
     .footer_dark,
         .footer_light {
             display: flex;
