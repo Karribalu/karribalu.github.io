@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.179883d7.css",
-    "main.js": "/static/js/main.d762c196.js",
+    "main.js": "/static/js/main.dbc70e08.js",
     "static/js/787.5664c466.chunk.js": "/static/js/787.5664c466.chunk.js",
     "static/media/background-attached.png": "/static/media/background-attached.223eb5d8cead63e7bf9f.png",
     "static/media/total-bg-light.svg": "/static/media/total-bg-light.542d58cab5b773dfbd8c.svg",
@@ -9,7 +9,7 @@
     "static/media/hero-image-fixed-light.svg": "/static/media/hero-image-fixed-light.c9e660f3ed156cdbd1dd002f21c85607.svg",
     "static/media/skills-set.svg": "/static/media/skills-set.2f9a07f391a0cad225f6f72312f58646.svg",
     "static/media/jenkins.svg": "/static/media/jenkins.5f60a231a0ed446bc4a74e6c81ad9490.svg",
-    "static/media/Bala_Subramanyam_Resume.pdf": "/static/media/Bala_Subramanyam_Resume.11c5dbb52fcd2e38b4d5.pdf",
+    "static/media/Balasubramanyam_Resume.pdf": "/static/media/Balasubramanyam_Resume.911a7a166d3e34304c53.pdf",
     "static/media/flask.svg": "/static/media/flask.14646258ab759f9ff90f492167457e70.svg",
     "static/media/docker.svg": "/static/media/docker.91f400c88e1762bc1a397882253e6196.svg",
     "static/media/scikit.svg": "/static/media/scikit.8a14a9e5f067c105b814d6750107ed3e.svg",
@@ -63,11 +63,11 @@
     "static/media/dot.svg": "/static/media/dot.abac7e73b0a970bc5ecc.svg",
     "static/media/square-point.svg": "/static/media/square-point.5dfe41623b9a91099325cc389637629d.svg",
     "main.179883d7.css.map": "/static/css/main.179883d7.css.map",
-    "main.d762c196.js.map": "/static/js/main.d762c196.js.map",
+    "main.dbc70e08.js.map": "/static/js/main.dbc70e08.js.map",
     "787.5664c466.chunk.js.map": "/static/js/787.5664c466.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.179883d7.css",
-    "static/js/main.d762c196.js"
+    "static/js/main.dbc70e08.js"
   ]
 }
