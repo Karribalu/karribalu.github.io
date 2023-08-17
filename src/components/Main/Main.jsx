@@ -5,7 +5,7 @@ import "./Main.css";
 import { heroImage } from "../../icons";
 import heroImageLight from "../../assets/hero-image-fixed-light.svg";
 import { saveAs } from "file-saver";
-import resume from "../../assets/Bala_Subramanyam_Resume.pdf";
+import resume from "../../assets/Balasubramanyam_Resume.pdf";
 const Main = ({mode}) =>{ 
 
     const socialDarkStyle = {
