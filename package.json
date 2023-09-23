@@ -2,7 +2,7 @@
   "name": "bala-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://balasubramanyam.xyz/",
+  "homepage": "https://www.balasubramanyam.xyz/",
   "dependencies": {
     "@formspree/react": "^2.4.4",
     "@testing-library/jest-dom": "^5.16.5",
